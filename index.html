@@ -2,275 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy · OLX Data Extractor & Lead Scraper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Privacy Policy - Data Extractor for OLX & Lead Scraper</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background: #f4f7fb;
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            display: flex;
-            justify-content: center;
-            padding: 2rem 1rem;
-            line-height: 1.6;
-            color: #1e2b3a;
-        }
-
-        .policy-card {
-            max-width: 860px;
-            width: 100%;
-            background: #ffffff;
-            border-radius: 28px;
-            box-shadow: 0 20px 40px -12px rgba(0, 20, 30, 0.2), 0 8px 24px -6px rgba(0, 35, 45, 0.1);
-            padding: 2.8rem 2.8rem;
-            transition: all 0.2s ease;
-            border: 1px solid rgba(0, 110, 130, 0.08);
-        }
-
-        /* header / effective date */
-        .policy-header {
-            margin-bottom: 2.5rem;
-            border-bottom: 2px solid #e6edf4;
-            padding-bottom: 1.8rem;
-        }
-
-        .policy-header h1 {
-            font-size: 2.2rem;
-            font-weight: 600;
-            letter-spacing: -0.02em;
-            color: #0b2d3b;
-            margin-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .policy-header h1 span {
-            background: #d0e4f0;
-            color: #115166;
-            font-size: 1rem;
-            font-weight: 500;
-            padding: 0.2rem 1rem;
-            border-radius: 40px;
-            letter-spacing: 0.3px;
-            margin-left: 12px;
-        }
-
-        .effective-date {
-            font-size: 1.12rem;
-            color: #2f5468;
-            background: #ecf3f8;
-            display: inline-block;
-            padding: 0.3rem 1.5rem;
-            border-radius: 30px;
-            font-weight: 450;
-            border: 1px solid #cbdae6;
-        }
-
-        .intro {
-            background: #f0f6fd;
-            padding: 1.4rem 1.8rem;
-            border-radius: 22px;
-            margin: 2rem 0 2.2rem 0;
-            border-left: 5px solid #2a7f9c;
-            font-size: 1.08rem;
-            color: #1e4257;
-        }
-
-        .section {
-            margin: 2.2rem 0 2.5rem 0;
-        }
-
-        .section h2 {
-            font-size: 1.7rem;
-            font-weight: 550;
-            color: #154c61;
-            margin-bottom: 1.3rem;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            border-left: 6px solid #2a9d8f;
-            padding-left: 1rem;
-        }
-
-        .section h2::before {
-            content: '';
-            width: 6px;
-            height: 32px;
-            background: #2a9d8f;
-            border-radius: 6px;
-            display: inline-block;
-        }
-
-        .sub-block {
-            background: #f9fcff;
-            border-radius: 24px;
-            padding: 1.5rem 2rem;
-            border: 1px solid #dde9f2;
-            margin-bottom: 1.5rem;
-        }
-
-        .bullet-list {
-            list-style: none;
-            margin: 1.2rem 0 0.4rem 0;
-        }
-
-        .bullet-list li {
-            margin-bottom: 0.9rem;
-            padding-left: 2rem;
-            position: relative;
-            font-weight: 440;
-        }
-
-        .bullet-list li::before {
-            content: "●";
-            color: #2a7f9c;
-            font-weight: 700;
-            font-size: 1.3rem;
-            position: absolute;
-            left: 0;
-            top: -4px;
-        }
-
-        .permission-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 14px;
-            background: #ffffff;
-            padding: 1.1rem 1.5rem;
-            border-radius: 18px;
-            margin-bottom: 12px;
-            box-shadow: 0 2px 6px rgba(0,30,40,0.04);
-            border: 1px solid #cde1ed;
-        }
-
-        .permission-item strong {
-            background: #1c5b73;
-            color: white;
-            padding: 0.2rem 1rem;
-            border-radius: 30px;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            min-width: 82px;
-            text-align: center;
-        }
-
-        .permission-desc {
-            color: #1f3c4b;
-        }
-
-        .note-box {
-            background: #e4f3f7;
-            border-radius: 20px;
-            padding: 1.2rem 2rem;
-            color: #115166;
-            font-weight: 450;
-            border: 1px solid #b6d7e8;
-            margin: 1.8rem 0 0.8rem 0;
-        }
-
-        .footer-note {
-            margin-top: 2.8rem;
-            padding-top: 1.8rem;
-            border-top: 2px dashed #b9d3e7;
-            text-align: center;
-            color: #316277;
-            font-size: 0.98rem;
-        }
-
-        .footer-note a {
-            color: #1f687f;
-            text-decoration: none;
-            font-weight: 500;
-            border-bottom: 1.5px dotted #7bb1c7;
-        }
-
-        .footer-note a:hover {
-            color: #023244;
-            border-bottom: 2px solid;
-        }
-
-        @media (max-width: 550px) {
-            .policy-card { padding: 1.8rem 1.2rem; }
-            .policy-header h1 { font-size: 1.8rem; flex-wrap: wrap; }
-            .section h2 { font-size: 1.5rem; }
-            .permission-item { flex-direction: column; align-items: flex-start; gap: 8px; }
-        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; background-color: #f9f9f9; }
+        .card { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        h1 { color: #002f34; border-bottom: 2px solid #002f34; padding-bottom: 10px; }
+        h2 { color: #002f34; margin-top: 30px; }
+        .highlight { background: #e0f2f1; padding: 2px 5px; border-radius: 4px; font-weight: bold; }
+        .permissions-list { list-style: none; padding: 0; }
+        .permissions-list li { margin-bottom: 15px; padding-left: 10px; border-left: 4px solid #ffce32; }
+        .footer { margin-top: 40px; text-align: center; font-size: 0.9em; color: #666; border-top: 1px solid #eee; padding-top: 20px; }
+        .privacy-badge { display: inline-block; background: #002f34; color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold; margin-bottom: 20px; }
     </style>
 </head>
 <body>
-    <div class="policy-card">
-        <div class="policy-header">
-            <h1>
-                🔏 Privacy Policy
-                <span>Extension</span>
-            </h1>
-            <div class="effective-date"><strong>Effective Date:</strong> February 16, 2026</div>
-        </div>
 
-        <div class="intro">
-            This Privacy Policy describes how the <strong>OLX Data Extractor & Lead Scraper</strong> ("the Extension") handles user information.
-        </div>
+<div class="card">
+    <div class="privacy-badge">🔒 Privacy First</div>
+    <h1>Privacy Policy</h1>
+    <p><strong>Effective Date:</strong> March 1, 2026</p>
+    <p>This Privacy Policy describes how the <strong>Data Extractor for OLX & Lead Scraper</strong> ("the Extension") handles user information.</p>
 
-        <!-- 1. Data Collection -->
-        <div class="section">
-            <h2>1. Data Collection and Usage</h2>
-            <div class="sub-block">
-                <p style="font-size:1.08rem; margin-bottom: 1.4rem;">The Extension is a tool designed to help users extract marketplace listing data for research purposes. <strong>All data extraction and processing occur locally on the user's computer.</strong></p>
-                <ul class="bullet-list">
-                    <li><strong>No Personal Data Collection:</strong> We do not collect, store, or transmit any personal information about you to external servers.</li>
-                    <li><strong>Local Storage:</strong> Scraped data (such as listing titles, prices, and phone numbers) is stored locally in your browser's storage only.</li>
-                    <li><strong>User Control:</strong> You can clear all stored data at any time by clicking the "Clear Data" button within the extension popup.</li>
-                </ul>
-            </div>
-        </div>
+    <h2>1. Data Collection and Usage</h2>
+    <p>The Extension is a professional tool designed to help users extract marketplace listing data for lead generation and research. <strong>All data extraction and processing occur locally on your computer.</strong></p>
+    <ul>
+        <li><strong>No Personal Data Collection:</strong> We do not collect, store, or transmit any personal information (names, emails, browsing history) to external servers.</li>
+        <li><strong>Local Storage:</strong> Scraped data (titles, prices, phone numbers, specs) and your "Saved List" are stored 100% locally in your browser's internal storage.</li>
+        <li><strong>User Control:</strong> You have full control. You can clear all stored data at any time by clicking the <span class="highlight">"Clear Data"</span> button or removing items from your Saved list.</li>
+    </ul>
 
-        <!-- 2. Permissions Justification -->
-        <div class="section">
-            <h2>2. Permissions Justification</h2>
-            <div style="margin-bottom: 0.5rem;">To function correctly, the extension requires the following permissions:</div>
-            <div style="margin-top: 1.4rem;">
-                <div class="permission-item">
-                    <strong>activeTab</strong>
-                    <span class="permission-desc">To read the content of the OLX page you are currently viewing.</span>
-                </div>
-                <div class="permission-item">
-                    <strong>storage</strong>
-                    <span class="permission-desc">To save your scraped results locally so they aren't lost when you close the browser.</span>
-                </div>
-            </div>
-        </div>
+    <h2>2. Permissions Justification</h2>
+    <p>To provide a professional scraping experience, the extension requires the following permissions:</p>
+    <ul class="permissions-list">
+        <li><strong>activeTab:</strong> Used to temporarily access the OLX page you are currently viewing to read listing content only when you click "Scrape".</li>
+        <li><strong>storage:</strong> Essential for caching your scraped results and maintaining your "Saved List" so your work is not lost when you close the browser.</li>
+        <li><strong>sidePanel:</strong> Enables the side-by-side interface, allowing you to browse OLX while managing your data in real-time without switching windows.</li>
+        <li><strong>scripting:</strong> Required to execute the logic that unmasks verified contact numbers and handles "Load More" pagination on the page.</li>
+    </ul>
 
-        <!-- 3. Third-Party Access -->
-        <div class="section">
-            <h2>3. Third-Party Access</h2>
-            <div class="note-box">
-                ⚡ The Extension does not share any data with third-party services, advertisers, or analytics providers. Your research data belongs entirely to you.
-            </div>
-        </div>
+    <h2>3. Third-Party Access</h2>
+    <p>⚡ <strong>The Extension does not share any data with third-party services, advertisers, or analytics providers.</strong> Your research data and leads belong entirely to you and never leave your machine.</p>
 
-        <!-- 4. Changes to This Policy -->
-        <div class="section">
-            <h2>4. Changes to This Policy</h2>
-            <div style="background: #f6fafd; border-radius: 20px; padding: 1.3rem 2rem; border:1px solid #cde1ed;">
-                We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
-            </div>
-        </div>
+    <h2>4. Changes to This Policy</h2>
+    <p>We may update our Privacy Policy from time to time to reflect new features. Any changes will be updated on this page and reflected in the "Effective Date".</p>
 
-        <!-- local storage note / clarity -->
-        <div style="background: #eaf2f9; border-radius: 30px; padding: 1rem 2rem; margin-top: 2.5rem; font-size:0.96rem; text-align: center; border: 1px solid #b7d3e8;">
-            ✅ All data stays in your browser — private, local, and yours.
-        </div>
-
-        <div class="footer-note">
-            OLX Data Extractor & Lead Scraper · <a href="#" onclick="return false;">Version 1.0</a> · your privacy respected
-        </div>
+    <div class="footer">
+        <p>✅ <strong>All data stays in your browser — private, local, and yours.</strong></p>
+        <p>&copy; 2026 Data Extractor for OLX & Lead Scraper</p>
     </div>
+</div>
+
 </body>
 </html>
